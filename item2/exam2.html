@@ -20,59 +20,46 @@
         <img src="pictures/logo.png" alt="Reddit Logo" class="header-img" />
       </div>
       <div class="user-info">
-        <span> <a>7hundredand77</a>, you're back! <a href="#">preferences</a> |
-          <a href="#">logout?</a></span
-        >
+        <span
+          ><a>7hundredand77</a>, you're back! <a href="#">preferences</a> |
+          <a href="#">logout?</a>
+        </span>
       </div>
     </div>
 
     <div class="main-container">
+      <!-- Sidebar -->
       <div class="sidebar">
         <ul>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >FRONT PAGE</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">FRONT PAGE</a>
           </li>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >PICS</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">PICS</a>
           </li>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >SCIENCE</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">SCIENCE</a>
           </li>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >TECHNOLOGY</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">TECHNOLOGY</a>
           </li>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >ASK REDDIT</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">ASK REDDIT</a>
           </li>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >FUNNY</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">FUNNY</a>
           </li>
           <li>
-            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" /><a
-              href="#"
-              >WTF</a
-            >
+            <img src="pictures/icon.png" alt="Icon" class="sidebar-icon" />
+            <a href="#">WTF</a>
           </li>
         </ul>
-        <!-- Added "More" Button -->
         <div class="more-button">
           <a href="#">(MORE)</a>
         </div>
@@ -90,110 +77,83 @@
         </div>
       </div>
 
+      <!-- Content -->
       <div class="content">
         <div class="post-list">
-            <div class="post" onclick="toggleDescription(this)">
-                <div class="vote">
-                    <button class="upvote">↑</button>
-                    <span class="score">232</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-details">
-                    <h2><a href="#">I AM the guy who created this design AMA</a></h2>
-                    <p>submitted 19 hours ago by <a href="#">7hundredand77</a></p>
-                    <a href="#">Comments: 200 | Share | Save | Hide | Report</a>
-                </div>
-                <div class="post-description">
-                    <div class="post-content">
-                        <p>Wow, the first Reddit redesign I've seen that doesn't suck...</p>
-                    </div>
-                    <div class="comments-section">
-                        <h3>Comments</h3>
-                        <div class="comment">
-                            <div class="comment-meta">
-                                <span>UserNumber42 47 points 21 hours ago</span>
-                            </div>
-                            <div class="comment-body">
-                                <p>This looks like an email client. Brilliant!</p>
-                            </div>
-                        </div>
-                        <!-- Repeat the above block for each comment -->
-                    </div>
-                </div>
+          <div class="post" onclick="showDescription(this)">
+            <div class="vote">
+              <button class="upvote">↑</button>
+              <span class="score">232</span>
+              <button class="downvote">↓</button>
             </div>
-
-            <div class="post" onclick="toggleDescription(this)">
-                <div class="vote">
-                    <button class="upvote">↑</button>
-                    <span class="score">232</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-details">
-                    <h2><a href="#">I AM the guy who created this design AMA</a></h2>
-                    <p>submitted 19 hours ago by <a href="#">7hundredand77</a></p>
-                    <a href="#">Comments: 200 | Share | Save | Hide | Report</a>
-                </div>
-                <div class="post-description">
-                    <div class="post-content">
-                        <p>Wow, the first Reddit redesign I've seen that doesn't suck...</p>
-                    </div>
-                    <div class="comments-section">
-                        <h3>Comments</h3>
-                        <div class="comment">
-                            <div class="comment-meta">
-                                <span>UserNumber42 47 points 21 hours ago</span>
-                            </div>
-                            <div class="comment-body">
-                                <p>This looks like an email client. Brilliant!</p>
-                            </div>
-                        </div>
-                        <!-- Repeat the above block for each comment -->
-                    </div>
-                </div>
+            <div class="post-details">
+              <h2><a href="#">I AM the guy who created this design AMA</a></h2>
+              <p>submitted 19 hours ago by <a href="#">7hundredand77</a></p>
+              <a href="#">Comments: 200 | Share | Save | Hide | Report</a>
             </div>
-            <div class="post" onclick="toggleDescription(this)">
-                <div class="vote">
-                    <button class="upvote">↑</button>
-                    <span class="score">232</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-details">
-                    <h2><a href="#">I AM the guy who created this design AMA</a></h2>
-                    <p>submitted 19 hours ago by <a href="#">7hundredand77</a></p>
-                    <a href="#">Comments: 200 | Share | Save | Hide | Report</a>
-                </div>
-                <div class="post-description">
-                    <div class="post-content">
-                        <p>Wow, the first Reddit redesign I've seen that doesn't suck...</p>
-                    </div>
-                    <div class="comments-section">
-                        <h3>Comments</h3>
-                        <div class="comment">
-                            <div class="comment-meta">
-                                <span>UserNumber42 47 points 21 hours ago</span>
-                            </div>
-                            <div class="comment-body">
-                                <p>This looks like an email client. Brilliant!</p>
-                            </div>
-                        </div>
-                        <!-- Repeat the above block for each comment -->
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat the above block for each post -->
+          </div>
+          <!-- Repeat the above block for each post -->
         </div>
+      </div>
+
+      <!-- Description Container -->
+      <div class="description-container" id="description-container">
+        <div class="post-description" id="post-description">
+          <!-- Dynamic content will be inserted here -->
+        </div>
+      </div>
     </div>
 
     <script>
-        function toggleDescription(post) {
-            const description = post.querySelector('.post-description');
-            if (description.style.display === 'block') {
-                description.style.display = 'none';
-            } else {
-                description.style.display = 'block';
-            }
-        }
-    </script>
+      function showDescription(post) {
+        const descriptionContainer = document.getElementById(
+          "description-container"
+        );
+        const postDescription = document.getElementById("post-description");
 
+        // Clear existing content
+        postDescription.innerHTML = "";
+
+        // Get the post details
+        const title = post.querySelector(".post-details h2").innerText;
+        const content = post.querySelector(".post-details p").innerText;
+
+        // Create new content
+        postDescription.innerHTML = `
+                <div class="post-content">
+                    <h2>${title}</h2>
+                    <p>${content}</p>
+                </div>
+                <div class="comments-section">
+                    <h3>Comments</h3>
+                    <div class="comment">
+                        <div class="comment-meta">
+                            <span>UserNumber42 47 points 21 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>This looks like an email client. Brilliant!</p>
+                        </div>
+                    </div>
+                    <!-- Repeat the above block for each comment -->
+                </div>
+            `;
+
+        // Show the description container
+        descriptionContainer.style.display = "block";
+      }
+
+      // Hide the description container when clicking outside of it
+      document.addEventListener("click", function (event) {
+        const descriptionContainer = document.getElementById(
+          "description-container"
+        );
+        if (
+          !event.target.closest(".post") &&
+          !event.target.closest("#description-container")
+        ) {
+          descriptionContainer.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

@@ -6,19 +6,14 @@ body {
   background-color: #f6f6f6;
 }
 
-h1 {
-  font-size: 24px;
-  margin: 0;
-}
-
 .header {
   background-color: #cee3f8;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* Fixed height for header */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+  height: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -31,15 +26,15 @@ h1 {
   text-decoration: none;
   font-size: 24px;
   color: black;
+  margin-left: 10px;
 }
 
 .header-img {
   height: 40px;
   width: auto;
-  /* margin-right: 10px; */
 }
 
-.header .user-info {
+.user-info {
   font-size: 14px;
 }
 
@@ -59,9 +54,9 @@ h1 {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  height: calc(100vh - 80px); /* Full height minus header and margin */
-  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 80px);
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -88,75 +83,24 @@ h1 {
   font-size: 14px;
 }
 
-/* More Button Styling */
-.more-button {
-  margin-top: 10px;
-  text-align: left;
-}
-
-.more-button a {
-  text-decoration: none;
-  color: #0079d3;
-  font-size: 14px;
-  padding: 5px 10px;
-  display: inline-block;
-}
-
-.more-button a:hover {
-  background-color: #0079d3;
-  color: #ffffff;
-}
-
-/* Submit Box Styling */
-.submit-box {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f0f8ff; /* Light blue background */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.submit-box .submit-link {
-  text-decoration: none;
-  color: #0079d3;
-  padding: 4px;
-  display: inline-block;
-}
-
-.submit-box p {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
-}
-
+.more-button,
+.submit-box,
 .create-box {
   margin-top: 10px;
   padding: 10px;
-  background-color: #f0f8ff; /* Light blue background */
+  background-color: #f0f8ff;
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: left;
 }
 
-.create-box .create-link {
+.more-button a,
+.submit-box a,
+.create-box a {
   text-decoration: none;
   color: #0079d3;
-  padding: 4px;
+  font-size: 14px;
   display: inline-block;
-}
-
-.create-box p {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
-}
-
-.ads-box p {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
-  text-align: center;
 }
 
 .content {
@@ -171,29 +115,14 @@ h1 {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-}
-
-.post-list {
-  /* display: grid; */
-  grid-template-columns: 50px 1fr;
-  gap: 10px;
-}
-
-.post-details {
-  flex: 1; /* Expand to fill remaining space */
-}
-
-.post-details a {
-  text-decoration: none;
-  color: #0079d3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .vote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: "5px";
+  margin-right: 10px;
 }
 
 .upvote,
@@ -205,7 +134,11 @@ h1 {
 }
 
 .score {
-  margin: 0px 5px;
+  margin: 5px 0;
+}
+
+.post-details {
+  flex: 1;
 }
 
 .post-details h2 a {
@@ -214,26 +147,25 @@ h1 {
   font-size: 24px;
 }
 
-.post-details p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #666;
-}
-
+.post-details p,
 .post-details a {
   margin: 5px 0;
   font-size: 14px;
   color: #666;
 }
 
-.post-description {
-  display: none; /* Initially hidden */
-  margin-left: 20px; /* Add spacing between post details and description */
-  max-width: 300px; /* Limit width of the description */
-}
-
-.post-content {
-  margin-bottom: 10px;
+.description-container {
+  display: none;
+  position: fixed;
+  top: 80px; /* Position below the header */
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
 .comments-section h3 {
