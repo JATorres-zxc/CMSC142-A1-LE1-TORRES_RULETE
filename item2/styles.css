@@ -133,6 +133,13 @@ h1 {
   color: #555;
 }
 
+.ads-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
 .content {
   width: 75%;
   margin-left: 5%;
