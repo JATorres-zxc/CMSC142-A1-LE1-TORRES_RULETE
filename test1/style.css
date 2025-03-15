@@ -89,7 +89,7 @@ h1 {
 .news-card img {
     border-radius: 10px;
     display: block;
-    width: 126px; /* set to 126px lang sir para equal yung width ng images  */
+    width: 300px;
     height: auto;
     object-fit: cover;
 }
