@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cooking Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Easy Pancakes Recipe</h1>
+    <p>Follow the steps below to cook delicious pancakes.</p>
+</header>
+
+<main class="steps-container">
+    <!-- Step 1 -->
+    <section id="step1" class="step" tabindex="0" aria-live="polite" aria-hidden="true">
+        <h2>Step 1: Gather Ingredients</h2>
+        <p>You will need flour, eggs, milk, and sugar.</p>
+        <a href="#step2" class="next" aria-label="Next step, Mix Ingredients" aria-hidden="true">Next</a>
+    </section>
+
+    <!-- Step 2 -->
+    <section id="step2" class="step" tabindex="0" aria-live="polite" aria-hidden="true">
+        <h2>Step 2: Mix Ingredients</h2>
+        <p>Whisk all ingredients together in a bowl.</p>
+        <a href="#step1" class="prev" aria-label="Back to Step 1, Gather Ingredients" aria-hidden="true">Back</a>
+        <a href="#step3" class="next" aria-label="Next step, Cook the Pancakes" aria-hidden="true">Next</a>
+    </section>
+
+    <!-- Step 3 -->
+    <section id="step3" class="step" tabindex="0" aria-live="polite" aria-hidden="true">
+        <h2>Step 3: Cook the Pancakes</h2>
+        <p>Pour batter onto a hot pan and cook until golden brown.</p>
+        <a href="#step2" class="prev" aria-label="Back to Step 2, Mix Ingredients" aria-hidden="true">Back</a>
+        <a href="#step4" class="next" aria-label="Next step, Serve and Enjoy" aria-hidden="true">Next</a>
+    </section>
+
+    <!-- Step 4 -->
+    <section id="step4" class="step" tabindex="0" aria-live="polite" aria-hidden="true">
+        <h2>Step 4: Serve and Enjoy</h2>
+        <p>Top with syrup and enjoy your homemade pancakes!</p>
+        <a href="#step3" class="prev" aria-label="Back to Step 3, Cook the Pancakes" aria-hidden="true">Back</a>
+        <a href="#step1" class="restart" aria-label="Restart Recipe from Step 1" aria-hidden="true">Restart</a>
+    </section>
+</main>
+
+</body>
+</html>

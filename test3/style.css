@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Step container - Ensures each step is focusable */
+.steps-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+
+/* Steps */
+.step {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show step1 by default */
+.step:first-of-type {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+/* Show only the targeted or focused step */
+.step:target,
+.step:focus-within {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    outline: 3px solid #ffcc00;
+}
+
+/* Hide non-targeted steps from screen readers */
+.step:not(:target):not(#step1) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.step:target {
+    display: block;
+}
+
+/* Navigation buttons */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    background: #0057D9; /* Improved contrast */
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+a:hover, a:focus {
+    background: #0041A3; /* Better contrast */
+    outline: 2px solid #ffcc00;
+}
+
+/* Ensure navigation is clear */
+.prev, .next, .restart {
+    display: inline-block;
+    margin-top: 10px;
+}
