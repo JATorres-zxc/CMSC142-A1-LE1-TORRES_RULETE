@@ -24,6 +24,13 @@ h1 {
 .logo {
   display: flex;
   align-items: center;
+  color: black;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
 }
 
 .header-img {
@@ -223,10 +230,6 @@ h1 {
   display: none; /* Initially hidden */
   margin-left: 20px; /* Add spacing between post details and description */
   max-width: 300px; /* Limit width of the description */
-}
-
-.post:hover .post-description {
-  display: block; /* Show description when hovering over the post */
 }
 
 .post-content {
