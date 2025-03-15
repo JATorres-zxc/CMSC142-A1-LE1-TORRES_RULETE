@@ -136,9 +136,15 @@ a:hover {
 @media (max-width: 600px) {
     .news-container {
         flex-direction: column;
+        gap: 0;
     }
 
     .sidebar {
         order: -1;
+        margin: 10px;
+    }
+
+    .news-card {
+        margin: 10px;
     }
 }
