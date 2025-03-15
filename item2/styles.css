@@ -83,7 +83,15 @@ body {
   font-size: 14px;
 }
 
-.more-button,
+.more-button {
+  margin-top: 10px;
+  padding: 10px;
+  /* background-color: #f0f8ff; */
+  /* border: 1px solid #ddd;
+    border-radius: 5px; */
+  text-align: left;
+}
+
 .submit-box,
 .create-box {
   margin-top: 10px;
@@ -111,12 +119,18 @@ body {
 .post {
   display: flex;
   background-color: #ffffff;
-  margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.post-list {
+  display: flex;
+  flex-direction: column; /* Stack posts vertically */
+  gap: 10px; /* Add spacing between posts */
+}
+
 
 .vote {
   display: flex;
@@ -149,6 +163,7 @@ body {
 
 .post-details p,
 .post-details a {
+  text-decoration: none;
   margin: 5px 0;
   font-size: 14px;
   color: #666;
@@ -180,4 +195,29 @@ body {
   font-size: 12px;
   color: #666;
   margin-bottom: 5px;
+}
+
+/* Pagination Buttons */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px 20px;
+  background-color: #0079d3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination-button:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+}
+
+.pagination-button.newer {
+  margin-right: 10px; /* Add spacing between buttons */
 }
