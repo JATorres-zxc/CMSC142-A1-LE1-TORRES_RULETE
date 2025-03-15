@@ -124,12 +124,12 @@
           <button class="pagination-button older">Older</button>
         </div>
       </div>
+    </div>
 
-      <!-- Description Container -->
-      <div class="description-container" id="description-container">
-        <div class="post-description" id="post-description">
-          <!-- Dynamic content will be inserted here -->
-        </div>
+    <!-- Description Container -->
+    <div class="description-container" id="description-container">
+      <div class="post-description" id="post-description">
+        <!-- Dynamic content will be inserted here -->
       </div>
     </div>
 
@@ -149,65 +149,34 @@
 
         // Create new content
         postDescription.innerHTML = `
-                <div class="post-content">
-                    <h2>${title}</h2>
-                    <p>${content}</p>
-                </div>
-                <div class="comments-section">
-                    <h3>Comments</h3>
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <span>UserNumber42 47 points 21 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>This looks like an email client. Brilliant!</p>
-                        </div>
-                    </div>
+            <div class="post-content">
+                <h2>${title}</h2>
+                <p>${content}</p>
+            </div>
 
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <span>UserNumber42 47 points 21 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>This looks like an email client. Brilliant!</p>
-                        </div>
+            <div class="add-comment">
+                <form>
+                    <div class="comment-form">
+                        <textarea></textarea>
+                        <button type="submit">Save</button>
                     </div>
+                </form>
+            </div>
 
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <span>UserNumber42 47 points 21 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>This looks like an email client. Brilliant!</p>
-                        </div>
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div class="comment">
+                    <div class="comment-meta">
+                        <span>UserNumber42 47 points 21 hours ago</span>
                     </div>
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <span>UserNumber42 47 points 21 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>This looks like an email client. Brilliant!</p>
-                        </div>
+                    <div class="comment-body">
+                        <p>This looks like an email client. Brilliant!</p>
                     </div>
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <span>UserNumber42 47 points 21 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>This looks like an email client. Brilliant!</p>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <span>UserNumber42 47 points 21 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>This looks like an email client. Brilliant!</p>
-                        </div>
-                    </div>
-                    <!-- Repeat the above block for each comment -->
                 </div>
-            `;
+                <!-- Repeat the above block for each comment -->
+            </div>
+        `;
 
         // Show the description container
         descriptionContainer.style.display = "block";
