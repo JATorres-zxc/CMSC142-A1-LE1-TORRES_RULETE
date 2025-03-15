@@ -1,0 +1,144 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #005bb5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Layout */
+.news-container {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.newsfeed {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    border-bottom: 2px solid #005bb5;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #005bb5;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* News Article Cards */
+.news-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-card img {
+    border-radius: 10px;
+    display: block;
+    width: 126px; /* set to 126px lang sir para equal yung width ng images  */
+    height: auto;
+    object-fit: cover;
+}
+
+
+.news-content h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+.news-content .date {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.news-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.news-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #005bb5;
+    font-weight: bold;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #005bb5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C00000 !important;
+}
+
+
+
+@media (max-width: 600px) {
+    .news-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+}
