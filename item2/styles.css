@@ -1,8 +1,17 @@
 /* General Styles */
-body {
-  font-family: verdana, arial, helvetica, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: verdana, arial, helvetica, sans-serif;
+  /* margin: 0; */
+  /* padding: 0; */
+  width: 100%;
+  height: 100%;
   background-color: #fff;
 }
 
@@ -67,20 +76,22 @@ body {
 
 .below-header-tabs {
   list-style: none; /* Remove bullet points */
-  background-color: #f7f7f7;
+  background-color: #fbfbfb;
   display: flex; /* Align items horizontally */
   justify-content: left; /* Center-align tabs */
-  /* padding: 0; Remove default padding */
-  margin-left: -20px;
+  padding: 2px;
+  margin-left: 20px;
   margin-top: 3px;
+  /* margin: 0; */
   /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.17); */
   width: 100%;
   border: #000;
   border-style: solid;
   border-top: #333;
-  border-right: #333;
+  border-right: #b01818;
   border-left: #333;
   border-width: 1px;
+  gap: 5px;
 }
 
 .whathot {
@@ -92,7 +103,7 @@ body {
   height: 25px;
   /* box-shadow: 0 0 8px 0.1px #888; */
   clip-path: inset(-8px -8px 0px -8px);
-  /* border-radius: 2px; */
+  border-radius: 2px;
   margin-bottom: -4px;
   font-size: 12px;
   color: #b52100;
@@ -100,10 +111,13 @@ body {
 }
 
 .below-header-tabs li {
-  margin: 0 10px; /* Add spacing between tabs */
+  /* margin: 0 10px; */
   border-style: solid;
   border-width: 1px;
   border-bottom: #333;
+  /* gap: 5px; */
+  border-radius: 3px;
+  margin-bottom: -3px;
 }
 
 .others {
@@ -118,6 +132,60 @@ body {
   color: #b52100; /* Add underline on hover */
 }
 
+.inside-below {
+  display: flex;
+  gap: 10px;
+  margin-left: 450px;
+  margin-top: -15px;
+  font-size: 12px;
+  height: 25px;
+}
+
+.inside-below button {
+  border: #000 solid;
+  border-width: 1px;
+  padding: 3px;
+  color: #393939;
+  border-radius: 3px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.search-form input[type="text"] {
+  /* padding: 5px; */
+  width: 200px;
+  border: none;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon,
+.msg-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.new-msg-button,
+.link-button,
+.comment-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0079d3;
+  font-size: 12px;
+}
+
 .main-container {
   display: flex;
   width: 100%;
@@ -127,23 +195,23 @@ body {
 }
 
 .main-content {
-  flex: 1; /* Allow main content to take up remaining space */
+  flex: 1;
   background-color: #ffffff;
   margin-top: 20px;
   /* border: 1px solid #ddd; */
   /* border-radius: 5px; */
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   /* justify-items: left; */
   /* box-shadow: 0 0 8px 0.1px #888; */
 }
 
 .sidebar {
-  width: 20%;
+  width: 14%;
   background-color: #eef8fe;
   /* padding: 10px; */
   /* border-radius: 5px; */
-  height: 100%;
+  height: 900px;
   /* overflow-y: auto; */
   position: relative;
   box-shadow: 0 0 8px 0.1px #888;
@@ -260,11 +328,16 @@ body {
   width: 40px;
 }
 
+.vote-img {
+  width: 15px;
+  height: 15px;
+}
+
 .upvote,
 .downvote {
   background: none;
   border: none;
-  font-size: 12px;
+  /* font-size: 12px; */
   cursor: pointer;
 }
 
@@ -278,9 +351,11 @@ body {
   background-color: #ffffff;
   align-items: stretch;
   /* padding: 5px; */
-  margin-right: 5px;
+  /* margin-right: 5px; */
   border: 1px solid #000;
   border-left: #333;
+  border-right: #333;
+  border-top: #333;
   /* border-radius: 5px; */
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
@@ -290,10 +365,17 @@ body {
   flex-direction: column; /* Stack posts vertically */
   /* gap: 10px; Add spacing between posts */
   width: 50%;
+  height: 875px;
+  border: 1px;
+  border-style: solid;
+  margin: 0;
+  border-bottom: #333;
+  border-left: #333;
+  box-shadow: 0 0 8px 0.1px #888;
 }
 
 .post-details {
-  /* flex: 1; */
+  flex: 1;
   height: auto;
   width: 100%;
   display: flex;
@@ -319,31 +401,45 @@ body {
   padding: 0px;
 }
 
+.post-content {
+  margin-bottom: 10px;
+}
+
+.post-content-container {
+  display: flex; /* Use Flexbox to align post-details and description-container */
+  gap: 20px; /* Add spacing between the two sections */
+}
+
+.post-description {
+  margin-bottom: 10px;
+}
+
 .description-container {
-  display: none;
-  position: fixed;
-  top: 80px; /* Position below the header */
-  right: 20px;
-  width: 300px;
+  display: flex;
+  position: absolute;
+  top: 86px;
+  right: -5px;
+  width: 43.3%;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  z-index: 1000; /* Ensure it appears above other content */
+  /* z-index: 1000; Ensure it appears above other content */
 }
 
 /* Pagination Buttons */
 .pagination {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .pagination-button {
   padding: 10px 20px;
-  background-color: #0079d3;
-  color: #ffffff;
+  background-color: #efefef;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -355,6 +451,7 @@ body {
 }
 
 .pagination-button.newer {
+  align-items: center;
   margin-right: 10px; /* Add spacing between buttons */
 }
 
@@ -371,18 +468,6 @@ body {
   display: flex; /* Use Flexbox for horizontal alignment */
   gap: 10px; /* Add spacing between the text area and button */
   align-items: flex-end;
-}
-
-.comment-form button {
-  padding: 10px 20px;
-  background-color: #0079d3; /* Reddit blue */
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  width: 100px;
-  height: 40px;
 }
 
 .comment-form button:hover {
@@ -432,4 +517,26 @@ body {
 .comment-body p {
   margin: 0;
   font-size: 14px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none; /* Prevent resizing */
+  font-size: 14px;
+}
+
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #0079d3; /* Reddit blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+  height: 40px;
 }
