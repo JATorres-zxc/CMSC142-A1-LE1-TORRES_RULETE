@@ -297,13 +297,13 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 2px;
   width: 40px;
 }
 
 .vote-img {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 11px;
 }
 
 .upvote,
@@ -347,9 +347,6 @@ html {
   border-bottom: #333;
   border-left: #333;
   box-shadow: 0 0 8px 0.1px #888;
-}
-
-.submit {
 }
 
 .posts {
@@ -496,7 +493,7 @@ html {
 
 .comment-form textarea {
   width: 100%;
-  height: 80px;
+  height: 50px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -533,7 +530,7 @@ html {
 .format a {
   text-decoration: none;
   color: #005bb5;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .format {
@@ -542,19 +539,13 @@ html {
   justify-content: end;
 }
 
-.comment {
-  margin-bottom: 10px;
-  font-size: 12px;
-  display: flex;
-}
-
 .comment-vote-img {
   width: 30px;
   height: 35px;
 }
 
 .comment-meta {
-  font-size: 12px;
+  font-size: 10px;
   color: #666;
   margin-bottom: 5px;
 }
@@ -571,16 +562,117 @@ html {
 
 .comment-body p {
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
-.comment-reply {
+.comment {
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+}
+
+.comment-reply-1 {
+  width: 100wh;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: flex;
+}
+
+.comment-reply-2 {
+  width: 100wh;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: flex;
+}
+.comment-reply-3 {
+  width: 100wh;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: flex;
+}
+.comment-reply-4 {
+  width: 100wh;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: flex;
+}
+.comment-reply-5 {
+  width: 100wh;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: flex;
+}
+.comment-reply-6 {
+  width: 100wh;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: flex;
+}
+
+.reply-1-container {
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
   border: #000 solid 1px;
   border-top: #333;
   border-right: #333;
   border-bottom: #333;
   margin-left: 10px;
+}
+
+.reply-2-container {
   margin-bottom: 10px;
   font-size: 12px;
   display: flex;
+  flex-direction: column;
+  border: #000 solid 1px;
+  border-top: #333;
+  border-right: #333;
+  border-bottom: #333;
+  margin-left: 10px;
+}
+.reply-3-container {
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  border: #000 solid 1px;
+  border-top: #333;
+  border-right: #333;
+  border-bottom: #333;
+  margin-left: 10px;
+}
+.reply-4-container {
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  border: #000 solid 1px;
+  border-top: #333;
+  border-right: #333;
+  border-bottom: #333;
+  margin-left: 10px;
+}
+.reply-5-container {
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  border: #000 solid 1px;
+  border-top: #333;
+  border-right: #333;
+  border-bottom: #333;
+  margin-left: 10px;
+}
+.reply-6-container {
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  border: #000 solid 1px;
+  border-top: #333;
+  border-right: #333;
+  border-bottom: #333;
+  margin-left: 10px;
 }
