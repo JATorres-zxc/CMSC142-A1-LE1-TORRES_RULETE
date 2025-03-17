@@ -12,8 +12,8 @@ html {
   /* min-height: 100vh; */
   margin: 0px;
   background-color: #fff;
-  position: fixed;
-  /* overflow; */
+  /* position: fixed; */
+  /* overflow-y: scroll; */
 }
 
 .header {
@@ -50,6 +50,7 @@ html {
 .user-info a {
   text-decoration: none;
   color: #0079d3;
+  cursor: pointer;
 }
 
 .logo {
@@ -70,22 +71,28 @@ html {
 }
 
 .below-header-tabs {
-  position: relative;
-  list-style: none;
+  /* position: relative;  */
+  align-items: center;
   background-color: #fbfbfb;
   display: flex;
-  justify-content: left;
-  padding: 2px;
+  justify-content: space-between;
+  /* padding: 2px; */
   margin: 20px 0px 0px 0px;
   width: 100%;
-  border: #000;
+}
+
+.categories {
+  /* border: #000;
   border-style: solid;
   border-top: #333;
   border-right: #b01818;
-  border-left: #333;
+  border-left: #333; */
   border-width: 1px;
   gap: 5px;
   height: 30px;
+  list-style: none;
+  display: flex;
+  /* width: 40%; */
 }
 
 .whathot {
@@ -93,23 +100,26 @@ html {
   justify-items: center;
   align-items: center;
   background-color: #fafafb;
-  padding: 5px 10px;
+  padding: 0px 5px;
   clip-path: inset(-8px -8px 0px -8px);
   border-radius: 2px;
-  margin-top: 4px;
+  margin-top: 5px;
   font-size: 12px;
   color: #b52100;
   text-decoration: none;
   border-bottom: #333;
 }
 
-.below-header-tabs li {
+.categories li {
   margin-left: 10px;
   border-style: solid;
   border-width: 1px;
   border-bottom: #333;
   border-radius: 3px;
+  padding: 2px;
   margin-bottom: -3px;
+  width: auto;
+  justify-content: center;
 }
 
 .others {
@@ -125,8 +135,9 @@ html {
 
 .inside-below {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
-  margin-left: 700px;
+  /* margin-left: 700px; */
   margin-top: -10px;
   font-size: 12px;
   height: 25px;
@@ -148,7 +159,7 @@ html {
 }
 
 .search-form input[type="text"] {
-  width: 200px;
+  width: 90%;
   border: none;
 }
 
@@ -178,13 +189,16 @@ html {
 
 .main-container {
   display: flex;
+  flex-wrap: nowrap;
+  /* grid-template-columns: 1fr 4fr; */
   background-color: #fbfbfb;
 }
 
 .main-content {
   flex: 1;
+  width: 76%;
   background-color: #ffffff;
-  position: relative;
+  /* position: relative; */
   /* margin-top: 20px; */
 }
 
@@ -254,7 +268,7 @@ html {
 .create-box {
   margin-top: 10px;
   margin-left: -5px;
-  width: 185px;
+  width: 95%;
   background-color: #f0f8ff;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -285,11 +299,6 @@ html {
   margin-left: 12px;
   font-size: 12px;
   display: inline-block;
-}
-
-.content {
-  width: 75%;
-  margin-left: 5%;
 }
 
 .vote {
@@ -329,6 +338,7 @@ html {
   background-color: #ffffff;
   align-items: stretch;
   width: 100%;
+  height: auto;
   border: 1px solid #000;
   border-left: #333;
   border-right: #333;
@@ -339,8 +349,8 @@ html {
 .post-list {
   display: flex;
   flex-direction: column;
-  /* width: auto; */
-  /* height: auto; */
+  width: auto;
+  height: auto;
   border: 1px;
   border-style: solid;
   margin: 0;
@@ -353,6 +363,7 @@ html {
   display: flex;
   width: 50%;
   height: 100vh;
+  overflow-y: scroll;
   flex-direction: column;
 }
 
@@ -363,7 +374,7 @@ html {
 .post-details {
   /* flex: 1; */
   padding-left: 10px;
-  height: 55px;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -377,13 +388,22 @@ html {
   /* justify-content: center; */
 }
 
-.post-details h2 a {
+.post-details p,
+.post-details a {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
   color: #333;
   font-size: 11px;
 }
+
+/* .post-details h2 {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #005bb5;
+    font-size: 10px;
+  } */
 
 .inside-post {
   display: flex;
@@ -394,19 +414,41 @@ html {
   font-weight: bold;
 }
 
-.post-details p,
-.post-details a {
-  text-decoration: none;
-  font-size: 11px;
-  color: #666;
-  margin: 0px;
-  padding: 0px;
+.inside-post h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #005bb5;
 }
 
-.post-content h2,
+.inside-post h2:hover {
+  text-decoration: underline;
+  color: #005bb5;
+  cursor: pointer;
+}
+
+/* .post-details p,
+  .post-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #666;
+    margin: 0px;
+    padding: 0px;
+  } */
+
 .post-content p,
 .post-content a {
   font-size: 14px;
+}
+
+.post-content h2 {
+  font-size: 14px;
+  color: #005bb5;
+}
+
+.post-content h2:hover {
+  text-decoration: underline;
+  color: #005bb5;
+  cursor: pointer;
 }
 
 .post-content {
